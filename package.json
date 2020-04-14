@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "workbox injectManifest workbox-config.js"
+  },
+  "name": "cdn",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:ndrean/cdn.git",
+  "author": "Neven DREAN <nevendrean@yahoo.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "workbox-cli": "^5.1.2"
+  }
+}

@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-color: burlywood;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 20px 40px;
+}
+
+#users {
+  margin: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}

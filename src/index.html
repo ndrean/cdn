@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Put your description here." />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/android-chrome-512x512.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Test PWA</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <header>Users</header>
+
+    <div id="users"></div>
+
+    <script src="app.js"></script>
+
+    <script>
+      // Note: index html needs to be served, not just open for serviceWorker to work
+      // serviceWorker at the end
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("sw.js")
+            .then(console.log)
+            .catch(console.error);
+        });
+      }
+    </script>
+  </body>
+</html>
